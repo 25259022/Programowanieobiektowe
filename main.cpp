@@ -1,4 +1,6 @@
 #inculde <iostream>
+#include <menu.h>
+#include <tablica.h>
 
 using namespace std:
 
