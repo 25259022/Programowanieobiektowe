@@ -1,17 +1,8 @@
-include <menu.h>
-
-using namespace std;
-
-
+#include "menu.h"
 
 /// out for program menu
-void menu::wyswietl()
-{
 
-
-}
+void menu::wczytaj() {}
 	
-void menu::wczytaj();
-{
+void menu::wyswietl() {}
 
-}

@@ -1,6 +1,7 @@
-include <pliki.h>
+#include "tablica.h"
+#include "pliki.h"
 
-void wczytaj ()
+void read ();
 
 
-void zapisz (int x, int y, int tablica[][])
+void write (Table arr);

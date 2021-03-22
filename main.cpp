@@ -1,13 +1,11 @@
-#inculde <iostream>
-#include <menu.h>
-#include <tablica.h>
+#include <iostream>
+#include "tablica.h"
+#include "pliki.h"
+#include "menu.h"
 
-using namespace std:
-
-
+using namespace std;
 
 int main(){
-
 
 return 0;
 }

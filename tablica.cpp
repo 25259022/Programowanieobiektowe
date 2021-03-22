@@ -1,19 +1,15 @@
-#include <tablica.h>
+#include "tablica.h"
+#include <iostream>
 
 using namespace std;
 
 
-void tab_create(x,y,tablica)
+void Table::tab_add()
+{
+
+}
+void tab_editcell()
 {
 
 }
 
-void tab_add(tablica);
-{
-
-}
-
-void tabl_wysw(x,y,tablica);
-{
-
-}

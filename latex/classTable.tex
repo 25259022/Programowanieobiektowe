@@ -1,0 +1,88 @@
+\hypertarget{classTable}{}\doxysection{Table Class Reference}
+\label{classTable}\index{Table@{Table}}
+
+
+operations on table  
+
+
+
+
+{\ttfamily \#include $<$tablica.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTable_a2da147379bf0914bbc6cee1802867502}{Table}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em creates new table \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTable_aa86de10110d061afbf71378669912e26}{tab\+\_\+editcell}} (\mbox{\hyperlink{classTable}{Table}} arr, int axis\+\_\+x, int axis\+\_\+y, int value)
+\begin{DoxyCompactList}\small\item\em edits chosen by user cell \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTable_ae90b028793268aa142631988fea129b6}\label{classTable_ae90b028793268aa142631988fea129b6}} 
+void \mbox{\hyperlink{classTable_ae90b028793268aa142631988fea129b6}{tab\+\_\+add}} ()
+\begin{DoxyCompactList}\small\item\em adds new data to existing table \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTable_aabcd204d2a2fcc4285bbe5b5da2297e9}\label{classTable_aabcd204d2a2fcc4285bbe5b5da2297e9}} 
+int {\bfseries X}
+\item 
+\mbox{\Hypertarget{classTable_ad78a7b68ffef57a33508e0d088f7875b}\label{classTable_ad78a7b68ffef57a33508e0d088f7875b}} 
+int {\bfseries Y}
+\item 
+\mbox{\Hypertarget{classTable_a4d2d97c23939a3fb2dbecd638a03eb5e}\label{classTable_a4d2d97c23939a3fb2dbecd638a03eb5e}} 
+int $\ast$ {\bfseries tablica} = new int \mbox{[}X,Y\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+operations on table 
+
+This class is responsible for all operations on table in program. All data is stored with help of 2 dimension pointer table. in addition lenght of axis x and y is stored in int x and y accordingly. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTable_a2da147379bf0914bbc6cee1802867502}\label{classTable_a2da147379bf0914bbc6cee1802867502}} 
+\index{Table@{Table}!Table@{Table}}
+\index{Table@{Table}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{Table()}{Table()}}
+{\footnotesize\ttfamily Table\+::\+Table (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+creates new table 
+
+creates new table from scratch. running this function is nessecary before running\+: tab\+\_\+add and tab\+\_\+wysw. those operation require table which is created by tab\+\_\+create. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & -\/ column number \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & -\/ row number \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTable_aa86de10110d061afbf71378669912e26}\label{classTable_aa86de10110d061afbf71378669912e26}} 
+\index{Table@{Table}!tab\_editcell@{tab\_editcell}}
+\index{tab\_editcell@{tab\_editcell}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{tab\_editcell()}{tab\_editcell()}}
+{\footnotesize\ttfamily void Table\+::tab\+\_\+editcell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTable}{Table}}}]{arr,  }\item[{int}]{axis\+\_\+x,  }\item[{int}]{axis\+\_\+y,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+edits chosen by user cell 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em arr} & -\/ \mbox{\hyperlink{classTable}{Table}} for editting \\
+\hline
+\mbox{\texttt{ in}}  & {\em axis\+\_\+x} & -\/ column number \\
+\hline
+\mbox{\texttt{ in}}  & {\em axis\+\_\+y} & -\/ row number $\ast$\\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & -\/ value for replacing \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+tablica.\+h\item 
+tablica.\+cpp\end{DoxyCompactItemize}

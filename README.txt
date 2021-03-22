@@ -1,29 +1,34 @@
-	INTERFEJS
+	    INTERFEJS
 				
 1.Wyswietlenie menu
 				
-2.Wczytywanie menu i wywolywanie odpowiedniej funkcji
+2.Wczytywanie menu i wywolywanie odpowiedniej funkcji (int do int wybor)
 			
+
+//[Tablica- klasa skladajaca sie z 2 wymiarowej tablicy, informacji o dlugosci osi x i y]
+
+	    ARKUSZ
 			
-	ARKUSZ
-			
-1.Tworzenie tablicy (usr int: osi x i osi y)
+1.konstruktor tablicy (osi x i osi y)
 		
-2.Wczytywanie danych do tablicy (x, y, tablica, usr int: dane do komorek)
+2.Wczytywanie danych do tablicy (menu int: dane do komorek) (out do Tablica)
+//[prawdopodobnie bedzie to rozwiazane konstruktorem]
 	
 3.Wszelkie operacje na tablicy 
-	-dopisywanie (x, y, tablica, usr int: miejsce dopsania, zawartosc)
-	-usuwanie (x, y, tablica, usr int: miejsce dopsania, zawartosc)
+	-dopisywanie (menu int: miejsce dopsania, zawartosc) (out do Tablica)
+	-usuwanie (menu int: miejsce dopsania, zawartosc) (out do Tablica)
 
 4.Operacje matematyczne 
-	-operacja na poj komorkach (zawarosci tych komorek, usr int: oczekiwana operacja)
+	-operacja na poj komorkach (menu int: oczekiwana operacja, adresy komorek) (out do Tablica)
 	
-5.Wyswietlanie zawartosci (x, y, tablica)
+5.Wyswietlanie zawartosci (int Tablica)
 
 
-	OPERACJE NA PLIKACH
 
-1.Zapis do pliku (x,y,tablica)
+	    OPERACJE NA PLIKACH
 
-2.Wczytywanie z pliku (x,y,tablica)
+1.Zapis do pliku (int Tablica) (out do Pliku)
+
+
+2.Wczytywanie z pliku (int Plik) (out do Tablica)
 
