@@ -21,5 +21,9 @@
 5.Wyswietlanie zawartosci (x, y, tablica)
 
 
+	OPERACJE NA PLIKACH
 
+1.Zapis do pliku (x,y,tablica)
+
+2.Wczytywanie z pliku (x,y,tablica)
 
