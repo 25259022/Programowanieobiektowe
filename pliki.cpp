@@ -1,7 +1,8 @@
 #include "tablica.h"
 #include "pliki.h"
 
-void read ();
+int read (float **tablica,int *X, int *Y);
 
 
-void write (Table arr);
+
+int write (float **tablica,int X, int Y);

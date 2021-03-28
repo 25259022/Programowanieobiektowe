@@ -3,13 +3,16 @@
 
 using namespace std;
 
+void tab_create (float **tablica,int X,int Y)
+        {
+        tablica = new float *[Y];
+        for ( int i = 0; i < Y; ++i )
+        tablica[i] = new float [X];
+        }
 
-void Table::tab_add()
-{
+void tab_editcell( float **tablica, int X, int Y,int axis_x,int axis_y, int value);
 
-}
-void tab_editcell()
-{
 
-}
+void tab_add(float **tablica, int *X, int *Y, bool choice, int value);
+
 

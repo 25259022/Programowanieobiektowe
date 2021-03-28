@@ -2,12 +2,19 @@
 
 
 ///saves from file to Table class
+/**
+*@param[out] tablica - Table for storing table from file
+*@param[out] X - Axis X lenght
+*@param[out] Y - Axis Y lenght
+**/
 
-void read (Table arr);
+int read (float **tablica,int *X, int *Y);
 
 ///takes info from existing table and saves it into file
 /**
-*@param[in] arr - Table for saving
+*@param[in] tablica - Table for saving to file
+*@param[in] X - Axis X lenght
+*@param[in] Y - Axis Y lenght
 **/
- void save (Table arr);
+ int save (float **tablica,int X, int Y);
 
