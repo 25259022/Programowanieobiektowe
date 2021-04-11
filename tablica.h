@@ -13,32 +13,34 @@ using namespace std;
  * @param[in] X - Axis X lenght
  * @param[in] Y - Axis Y lenght
  */
-void tab_create(float **tablica,int X, int Y);
+
+float **tab_create(int X, int Y);
+
+
+void tab_remove(float **array, int Y);
 
 
 ///edits chosen by user cell
 /**
-*@param[out] tablica - Table for editting
+*@param[out] array - Table for editting
 * @param[in] X - Axis X lenght
 * @param[in] Y - Axis Y lenght
 * @param[in] axis_x - column number for changing
 * @param[in] axis_y - row number for changing
 * @param[in] value - value for replacing
 **/
-void tab_editcell( float **tablica, int X, int Y,int axis_x,int axis_y, int value);
+int tab_editcell(float **array, int X, int Y, int axis_x, int axis_y, int value);
 
 
 /// adds new data to existing table
 /**
-*@param[out] tablica - Table for editting
+*@param[out] array - Table for editting
  * @param[in,out] X - Axis X lenght
  * @param[in,out] Y - Axis Y lenght
  * @param[in] value - axis X or Y increase value
  * @param[in] choice - Defines which axis to change, true=x false=y
 **/
-void tab_add(float **tablica, int *X, int *Y, bool choice, int value);
+float **tab_change(float **array, int *X, int *Y, int new_x, int new_y);
 
-
-
-
+int tab_show(float **array, int X, int Y);
 

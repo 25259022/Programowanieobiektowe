@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mariolamaryniak/Desktop/Programowanieobiektowe/main.cpp
+iostream
+-
+tablica.h
+/Users/mariolamaryniak/Desktop/Programowanieobiektowe/tablica.h
+pliki.h
+/Users/mariolamaryniak/Desktop/Programowanieobiektowe/pliki.h
+menu.h
+/Users/mariolamaryniak/Desktop/Programowanieobiektowe/menu.h
+
+/Users/mariolamaryniak/Desktop/Programowanieobiektowe/menu.h
+
+/Users/mariolamaryniak/Desktop/Programowanieobiektowe/pliki.h
+
+/Users/mariolamaryniak/Desktop/Programowanieobiektowe/tablica.h
+
