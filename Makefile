@@ -1,6 +1,6 @@
 
-output: main.o menu.o pliki.o tablica.o
-	g++ main.o pliki.o tablica.o menu.o -o output
+output: main.o menu.o file.o table.o
+	g++ main.o file.o table.o menu.o -o output
 	doxygen
 
 main.o: main.cpp
@@ -9,11 +9,11 @@ main.o: main.cpp
 menu.o: menu.cpp menu.h
 	g++ -c menu.cpp
 	
-pliki.o: pliki.cpp pliki.o
-	g++ -c pliki.cpp
+file.o: file.cpp file.o
+	g++ -c file.cpp
 	
-tablica.o: tablica.cpp tablica.o
-	g++ -c tablica.cpp
+table.o: table.cpp table.o
+	g++ -c table.cpp
 	
 clean:
 	rm *.o

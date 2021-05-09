@@ -1,3 +1,0 @@
-/Users/mariolamaryniak/Desktop/Programowanieobiektowe/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/mariolamaryniak/Desktop/Programowanieobiektowe/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/mariolamaryniak/Desktop/Programowanieobiektowe/cmake-build-debug/CMakeFiles/Programowanieobiektowe.dir

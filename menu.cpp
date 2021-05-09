@@ -1,15 +1,11 @@
 #include "menu.h"
-#include "pliki.h"
-#include "tablica.h"
 #include <iostream>
-
+#include "table.h"
 using namespace std;
 
-void meny_show() {
-    float **array;
-    int X;
-    int Y;
+void menu_show() {
     int choice;
+    Table main_tab(0,0);
     do {
         cout << "         Menu" << endl;
         cout << "1.Utworz arkusz" << endl;
@@ -20,28 +16,32 @@ void meny_show() {
         cout << "5.Wczytaj z pliku" << endl;
         cout << "6.Zapisz do pliku" << endl;
         cout << "-----------------" << endl;
-        cout << "7.Zapisz do pliku" << endl;
+        cout << "7.Edytuj komorke" << endl;
         cout << endl;
         cout << "0.Wyjdz" << endl;
 
         cin >> choice;
 
+
         switch (choice) {
 
+
             case 1: {
-                system("clear");
+                //system("clear");
+                int X, Y;
                 cout << "Podaj wielkosc X:";
                 cin.ignore();
                 cin >> X;
                 cout << endl << "Podaj wielkosc Y:";
                 cin >> Y;
-                array = tab_create(X, Y);
+                main_tab.tab_build(X,Y);
+
                 break;
             }
 
             case 2: {
                 system("clear");
-                tab_remove(array, Y);
+                main_tab.tab_remove();
                 break;
             }
 
@@ -52,13 +52,13 @@ void meny_show() {
                 cin >> nx;
                 cout << "Podaj nowa wielkosc Y:";
                 cin >> ny;
-                tab_change(array, &X, &Y, nx, ny);
+                main_tab.tab_change(nx, ny);
                 break;
             }
 
             case 4: {
                 system("clear");
-                tab_show(array, X, Y);
+                main_tab.tab_show();
                 break;
             }
 
@@ -68,7 +68,7 @@ void meny_show() {
                 string rname;
                 cin >> rname;
                 rname += ".txt";
-                read(&array, &X, &Y, rname);
+                main_tab.read(rname);
                 break;
             }
 
@@ -78,7 +78,7 @@ void meny_show() {
                 string sname;
                 cin >> sname;
                 sname += ".txt";
-                save(array, X, Y, sname);
+                main_tab.save(sname);
                 break;
             }
 
@@ -96,12 +96,14 @@ void meny_show() {
                 int value;
                 cin >> value;
 
-                tab_editcell(array, X, Y, axis_X, axis_Y, value);
+                main_tab.tab_editcell(axis_X, axis_Y, value);
                 break;
             }
+
+
+
         }
+    }
+        while (choice != 0);
 
-    } while (choice != 0);
-    tab_remove(array, Y);
 }
-

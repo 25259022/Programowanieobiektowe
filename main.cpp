@@ -1,15 +1,8 @@
-#include <iostream>
-#include "tablica.h"
-#include "pliki.h"
 #include "menu.h"
-
-using namespace std;
-
+#include "table.h"
 int main() {
 
-
-    meny_show();
-
+menu_show();
 
     return 0;
 }
